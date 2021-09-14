@@ -18,7 +18,6 @@ public class BishopBlackTest {
         assert bishopBlack.position().getX() == 2 && bishopBlack.position().getY() == 0;
     }
 
-
     @Test
     public void wayC1G5() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
