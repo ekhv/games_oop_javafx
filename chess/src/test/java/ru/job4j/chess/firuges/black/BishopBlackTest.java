@@ -3,19 +3,19 @@ package ru.job4j.chess.firuges.black;
 import org.junit.Test;
 import ru.job4j.chess.firuges.Cell;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.*;
 
 public class BishopBlackTest {
     @Test
     public void positionC8() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C8);
-        assert bishopBlack.position().equals(Cell.C8);
+        assertEquals(bishopBlack.position(), Cell.C8);
     }
 
     @Test
     public void copyC8() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C8);
-        assert bishopBlack.position().getX() == 2 && bishopBlack.position().getY() == 0;
+        assertTrue(bishopBlack.position().getX() == 2 && bishopBlack.position().getY() == 0);
     }
 
     @Test
